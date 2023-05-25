@@ -22,5 +22,5 @@ with st.sidebar:
 
     if 'generated' not in st.session_state:
     st.session_state['generated'] = ["I'm HugChat, How may I help you?"]
-if 'past' not in st.session_state:
+    if 'past' not in st.session_state:
     st.session_state['past'] = ['Hi!']

@@ -20,7 +20,11 @@ with st.sidebar:
     add_vertical_space(5)
     st.write('Made with ❤️ by [Data Professor](<https://youtube.com/dataprofessor>)')
 
-    if 'generated' not in st.session_state:
-        st.session_state['generated'] = ["I'm HugChat, How may I help you?"]
-    if 'past' not in st.session_state:
-        st.session_state['past'] = ['Hi!']
+if 'generated' not in st.session_state:
+    st.session_state['generated'] = ["I'm HugChat, How may I help you?"]
+if 'past' not in st.session_state:
+    st.session_state['past'] = ['Hi!']
+
+input_container = st.container()
+colored_header(label='', description='', color_name='blue-30')
+response_container = st.container()

@@ -21,6 +21,6 @@ with st.sidebar:
     st.write('Made with ❤️ by [Data Professor](<https://youtube.com/dataprofessor>)')
 
     if 'generated' not in st.session_state:
-    st.session_state['generated'] = ["I'm HugChat, How may I help you?"]
+        st.session_state['generated'] = ["I'm HugChat, How may I help you?"]
     if 'past' not in st.session_state:
-    st.session_state['past'] = ['Hi!']
+        st.session_state['past'] = ['Hi!']
